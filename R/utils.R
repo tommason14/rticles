@@ -42,6 +42,7 @@ template_pandoc <- function(metadata, template, output, in_header = NULL, verbos
     tmp, output = output, verbose = verbose, wd = '.',
     options = c(
       "--template", rmarkdown::pandoc_path_arg(template),
+      "--natbib",
       rmarkdown::pandoc_include_args(in_header)
     )
   )
